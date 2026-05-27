@@ -7,19 +7,24 @@ tarefas = []
 
 # 2. Adicione 3 tarefas iniciais (strings)
 # Sua solução aqui:
+tarefas = ["leitura","estudar","praticar"]
 
 
 # 3. Imprima a tarefa prioritária (primeira da lista)
 # Sua solução aqui:
+print(f"Primeira tarefa: {tarefas[0]}")
 
 
 # 4. Marque a primeira tarefa como concluída (substitua por "✅ " + nome da tarefa)
 # Sua solução aqui:
+tarefas[0] = "✅" + tarefas[0]
+print(f"{tarefas[0]}")
 
 
 # 5. Use slicing para mostrar apenas as tarefas pendentes (exclua a primeira)
 # Sua solução aqui:
-
+print(f"Tarefas pendentes: {tarefas[1:]}")
 
 # 6. BÔNUS: Inverta a ordem da lista para priorizar as mais recentes
 # Sua solução aqui:
+print(f"Tarefas invertidas: {tarefas[::-1]}")

@@ -6,11 +6,15 @@ leituras_brutas = [23, 45, -1, 67, 105, 34, 89, -1, 56, 78]
 
 # 1. Filtre apenas leituras válidas (0 <= valor <= 100) usando list comprehension
 # Sua solução aqui:
+leituras_validas = [v for v in leituras_brutas if 0 <= v <= 100]
+#leituras_validas = [v for v in leituras_brutas if v >= 0 <= 100] # OS DOIS ESTÃO CERTOS
+print(f"Leituras Validas: {leituras_validas}")
 
-
-# 2. Calcule a média das leituras válidas (use sum() e len())
+# 2. Calcule a média das leituras válidas (use sum(leituras_validas) SOMA e len(leituras_validas) COMPRIMENTO)
 # Sua solução aqui:
 
+#sum(leituras_validas)
+#len(leituras_validas)
 
 # 3. Classifique cada leitura válida como "Baixa" (<40), "Média" (40-70) ou "Alta" (>70)
 # Use conditional expression dentro de uma comprehension
